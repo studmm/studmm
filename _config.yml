@@ -1,19 +1,16 @@
-title:            Студсовет мехмата МГУ
-description:      Представляем и защищаем интересы студентов мехмата
+title:            Blog Title
+description:      Describe your website here.
 
 # put your disqus here
 disqus_shortname:
-reading_time:      false # if true, shows the estimated reading time for a post
-words_per_minute:  200
-logo:              images/logo.png # logo visible in the topbar
+reading_time:     true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/logo.png # logo visible in the topbar
 excerpt_separator: <!--more-->
-share:             false
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: http://rmbk.me/studmm
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+url: http://aronbordin.com/neo-hpstr-jekyll-theme
 
 # draw your top menu here
 # each item must have a title and a url.
@@ -21,40 +18,36 @@ permalink:   /:categories/:title/
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Главная'
+  - title: 'Home'
     url: '/'
-  - title: 'Новости'
-    url: '/news'
-  - title: 'О нас'
-    url: '/about'
-  - title: 'Группы'
+  - title: 'Fork'
+    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
+  - title: 'Install'
+    url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme#installation'
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Categories'
+    url: '/categories'
+    type: 'categories'
+  - title: 'Favorites'
+    url: '#'
     submenu:
-      - title: 'Образование'
-        url: '/'
-      - title: 'Бытовые вопросы'
-        url: '/'
-      - title: 'Праздники'
-        url: '/'
-      - title: 'Оповещение'
-        url: '/'
-      - title: 'Спорт'
-        url: '/'
-      - title: 'Партнёры'
-        url: '/'
-      - title: 'Стипендии'
-        url: '/'
+      - title: 'Code Highlighter'
+        url: '/intro/code-highlighting-post/'
+      - title: 'Sample Post'
+        url: '/intro/sample-post/'
 
 # Owner/author information
 owner:
-  name:           Студсовет мехмата МГУ
-  site:           https://vk.com/stud_mm
+  name:           Your name
+  site:           http://aronbordin.com
   avatar:         images/avatar.jpg
-  twitter:
-  vk:             stud_mm
-  bio:            "Представляем и защищаем интересы студентов мехмата"
-  email:          studcouncilmm@gmail.com
+  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:          you@email.com
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
-  github: uburuntu
+  github: aron-bordin
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
@@ -62,15 +55,15 @@ twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
-  - title: "vk"
-    url: "https://vk.com/stud_mm"
-  - title: "instagram"
-    url: "https://www.instagram.com/stud_mm"
+  - title: "github"
+    url: "https://github.com/aron-bordin"
+  - title: "linkedin"
+    url: "https://br.linkedin.com/in/aronbordin"
   - title: "youtube"
-    url: "https://www.youtube.com/channel/UCXZgEiEZ79WZKmSbQh9BbXA"
+    url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
 
 # Background image to be tiled on all pages
-background: big_pattern.png
+background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -79,8 +72,8 @@ google_verify:
 bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Moscow
-locale:      ru-RU
+timezone:    America/New_York
+locale:      en_US
 future:      true
 highlighter: rouge
 markdown:    kramdown
@@ -88,11 +81,14 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
 # Amount of post to show on home page
 paginate: 5
 
 # if true, shows the floatting share buttons
-float_share: false
+float_share: true
 
 # Octopress
 # Default extensions
@@ -107,3 +103,4 @@ titlecase: true
 include: [".htaccess"]
 exclude: ["demo/*", "lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 gems: [jekyll-paginate]
+theme: neo-hpstr-jekyll-theme
